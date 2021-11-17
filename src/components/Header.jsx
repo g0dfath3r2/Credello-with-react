@@ -214,10 +214,7 @@ export default function Header() {
 
   return (
     <StyledHeader>
-      <div
-        className={` ${sidebarIsClicked ? "menu-mask" : ""}`}
-        onClick={handleClick}
-      >
+      <div className={` ${sidebarIsClicked ? "menu-mask" : ""}`}>
         <div className={`menu ${sidebarIsClicked ? "active" : ""}`}>
           <i className="fal fa-times  close-icon" onClick={handleClick}></i>
           <div className="menu-dropdown">
